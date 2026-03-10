@@ -32,10 +32,16 @@ namespace AkademikADOApp
                 lblStatus.Text = "Status : Database Connected";
                 MessageBox.Show("Koneksi ke database berhasil!");
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Koneksi ke database gagal!");
 
             }
+        }
+
+        private void btnDisconnect_Click(object sender, EventArgs e)
+        {
+        }
+
     }
 }
