@@ -52,7 +52,10 @@ namespace AkademikADOApp
                 lblStatus.Text = "Status : Database Disconnected";
                 MessageBox.Show("Koneksi ke database berhasil ditutup!");
             }
-        }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Koneksi ke database gagal ditutup!" + ex.Message);
+            }
 
     }
 }
