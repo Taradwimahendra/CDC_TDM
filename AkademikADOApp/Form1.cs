@@ -34,7 +34,7 @@ namespace AkademikADOApp
             }
             catch
             {
-                MessageBox.Show("Koneksi ke database gagal!" + Exception.Message);
+                MessageBox.Show("Koneksi ke database gagal!" );
 
             }
         }
@@ -56,6 +56,6 @@ namespace AkademikADOApp
             {
                 MessageBox.Show("Koneksi ke database gagal ditutup!" + ex.Message);
             }
-
+        }
     }
 }
