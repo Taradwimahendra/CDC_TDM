@@ -42,6 +42,7 @@ namespace AkademikADOApp
         private void btnDisconnect_Click(object sender, EventArgs e)
         {
             string connString = "Data Source=TARA\\TARA;Initial Catalog=DBAkademikADO;Integrated Security=True";
+            SqlConnection conn;
         }
 
     }
