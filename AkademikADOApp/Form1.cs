@@ -24,6 +24,13 @@ namespace AkademikADOApp
             string connString = "Data Source=TARA\\TARA;Initial Catalog=DBAkademikADO;Integrated Security=True";
 
             SqlConnection conn;
+
+            try
+            {
+                conn = new SqlConnection(connString);
+                conn.Open();
+
+            }
         }
     }
 }
