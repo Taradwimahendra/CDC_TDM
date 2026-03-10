@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.AccessControl;
 
 namespace AkademikADOApp
 {
@@ -20,7 +21,7 @@ namespace AkademikADOApp
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            string connectionString = "Data Source=TARA\\TARA;Initial Catalog=DBAkademikADO;Integrated Security=True";
         }
     }
 }
