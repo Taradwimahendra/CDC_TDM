@@ -19,7 +19,7 @@ namespace AkademikADOApp
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnConnect_Click(object sender, EventArgs e)
         {
             string connString = "Data Source=TARA\\TARA;Initial Catalog=DBAkademikADO;Integrated Security=True";
 
@@ -32,6 +32,10 @@ namespace AkademikADOApp
                 lblStatus.Text = "Status : Database Connected";
                 MessageBox.Show("Koneksi ke database berhasil!");
             }
-        }
+            catch 
+            {
+                MessageBox.Show("Koneksi ke database gagal!");
+
+            }
     }
 }
