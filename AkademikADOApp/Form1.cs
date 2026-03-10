@@ -34,7 +34,7 @@ namespace AkademikADOApp
             }
             catch
             {
-                MessageBox.Show("Koneksi ke database gagal!");
+                MessageBox.Show("Koneksi ke database gagal!" + Exception.Message);
 
             }
         }
@@ -49,6 +49,7 @@ namespace AkademikADOApp
             {
                 conn = new SqlConnection(connString);
                 conn.Close();
+                lblStatus.Text = "Status : Database Disconnected";
             }
         }
 
