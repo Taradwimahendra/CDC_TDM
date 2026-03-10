@@ -50,6 +50,7 @@ namespace AkademikADOApp
                 conn = new SqlConnection(connString);
                 conn.Close();
                 lblStatus.Text = "Status : Database Disconnected";
+                MessageBox.Show("Koneksi ke database berhasil ditutup!");
             }
         }
 
